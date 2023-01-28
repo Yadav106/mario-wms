@@ -1,0 +1,10 @@
+.entry--items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.itemAdd--button {
+    margin: 10px 300px;
+    border-radius: 10px;
+}

@@ -53,7 +53,7 @@ const Homepg = () => {
                   <a className="nav-link active" aria-current="page" href="#">Item Receipt</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Check In</a>
+                  <Link to='/entry' className='sidebar--links'>Check In</Link>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">Pick Order</a>

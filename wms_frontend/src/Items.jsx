@@ -28,6 +28,7 @@ const Items = () => {
                 <th>Check In</th>
                 <th>Expiry</th>
                 <th>Rack No.</th>
+                <th>Quantity</th>
             </tr>
             </thead>
             <tbody>
@@ -38,6 +39,7 @@ const Items = () => {
                     <td>{item.checkInDate}</td>
                     <td>{item.expDate}</td>
                     <td>{item.rackNo}</td>
+                    <td>{item.quantity}</td>
                 </tr>
             })}
             </tbody>

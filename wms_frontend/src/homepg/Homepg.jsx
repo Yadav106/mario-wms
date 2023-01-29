@@ -2,31 +2,10 @@ import React from 'react'
 import './styles.css'
 import { Link } from 'react-router-dom'
 import Report from './Report'
+import './styles.css'
 
 const Homepg = () => {
-  anychart.onDocumentReady(function () {
-
-    anychart.theme(anychart.themes.darkEarth);
-
-    var data = {
-      header: ["Name", "Death toll"],
-      rows: [
-        ["San-Francisco (1906)", 1500],
-        ["Messina (1908)", 87000],
-        ["Ashgabat (1948)", 175000],
-        ["Chile (1960)", 10000],
-        ["Tian Shan (1976)", 242000],
-        ["Armenia (1988)", 25000],
-        ["Iran (1990)", 50000]
-      ]
-    };
-
-    var chart = anychart.bar();
-    chart.data(data);
-    chart.title("The deadliest earthquakes in the XXth century");
-    chart.container("container");
-    chart.draw();
-  });
+  
   return (
     <div className='home--page'>
       <nav className="navbar navbar-dark bg-dark fixed-top">
@@ -72,7 +51,7 @@ const Homepg = () => {
                   <a className="nav-link" href="#">Route Return</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Report & Analysis</a>
+                  <Link to='/bar' className='sidebar--links'>Report & Analysis</Link>
                 </li>
               </ul>
             </div>
@@ -80,8 +59,7 @@ const Homepg = () => {
         </div>
       </nav>
       <div className='container--main'>
-        <div id="container"></div>
-        <Report />
+        <Report className='report'/>
         <div className="ta-c padT150 padB150">
           <button className="button cancel-btn">
             <Link to='/items' className='item--list'>Items</Link>

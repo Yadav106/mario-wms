@@ -5,15 +5,6 @@ import { db } from '../firebase-config';
 import { useEffect } from 'react';
 import { useState } from 'react';
 
-const data01 = [
-  { name: 'Group A', value: 400 },
-  { name: 'Group B', value: 300 },
-  { name: 'Group C', value: 300 },
-  { name: 'Group D', value: 200 },
-  { name: 'Group E', value: 278 },
-  { name: 'Group F', value: 189 },
-];
-
 export default function Report() {
 
     const [dataItems, setDataItems] = useState([])
@@ -27,13 +18,9 @@ export default function Report() {
         getItems()
     }, [])
 
-    useEffect(() => {
-        console.log(dataItems);
-    }, [dataItems])
-
     return (
         <ResponsiveContainer width="100%" height="100%">
-          <PieChart width={400} height={400}>
+          <PieChart width={500} height={500}>
             <Pie
             style={{marginLeft:20}}
               dataKey="value"
@@ -41,7 +28,7 @@ export default function Report() {
               data={dataItems}
               cx="50%"
               cy="50%"
-              outerRadius={80}
+              outerRadius={150}
               fill="#8884d8"
               label
             />          

@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles.css'
 import { Link } from 'react-router-dom'
+import Report from './Report'
 
 const Homepg = () => {
   anychart.onDocumentReady(function () {
@@ -80,6 +81,7 @@ const Homepg = () => {
       </nav>
       <div className='container--main'>
         <div id="container"></div>
+        <Report />
         <div className="ta-c padT150 padB150">
           <button className="button cancel-btn">
             <Link to='/items' className='item--list'>Items</Link>

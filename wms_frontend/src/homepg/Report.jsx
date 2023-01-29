@@ -4,6 +4,7 @@ import {collection, getDocs, addDoc, updateDoc, deleteDoc, doc} from 'firebase/f
 import { db } from '../firebase-config';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import './styles.css'
 
 export default function Report() {
 

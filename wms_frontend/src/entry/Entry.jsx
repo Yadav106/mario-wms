@@ -25,7 +25,7 @@ const Entry = () => {
 
     return (
     <form className='entry--items'>
-        Name : <input onChange={(e) => setName(e.target.value)} value={name}/>
+        Name : <input onChange={(e) => setName(e.target.value)} value={name} className='input'/>
         Check In Date: <input onChange={(e) => setCid(e.target.value)} value={cid}/>
         Expiry Date : <input onChange={(e) => setExp(e.target.value)} value={exp}/>
         Rack No. : <input type='number' onChange={(e) => setRack(e.target.value)} value={rack}/>

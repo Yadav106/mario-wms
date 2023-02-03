@@ -30,7 +30,7 @@ const Homepg = () => {
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">Item Receipt</a>
+                  <Link to='/items' className='sidebar--links'>Item Receipt</Link>
                 </li>
                 <li className="nav-item">
                   <Link to='/entry' className='sidebar--links'>Check In</Link>
